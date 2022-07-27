@@ -1,11 +1,11 @@
-CREATE TABLE(
+CREATE TABLE diabetes_db(
 	id INT NOT NULL,
 	encounter_id BIGINT NOT NULL,
 	patient_nbr BIGINT NOT NULL,
 	race VARCHAR(80),
 	gender VARCHAR(80),
 	age	VARCHAR(80),
-	weight INT, 
+	weight VARCHAR(10), 
 	admission_type_id INT NOT NULL,
 	discharge_disposition_id INT NOT NULL,
 	admission_source_id	INT NOT NULL,
@@ -50,4 +50,4 @@ CREATE TABLE(
 	change VARCHAR(10),
 	diabetesMed	VARCHAR(10),
 	readmitted VARCHAR(10)
-	)
+	);
