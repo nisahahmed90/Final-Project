@@ -1,3 +1,5 @@
+Project-Samson
+
 # Readmittance Rate Classification on Diabetes Dataset
 
 ## Project Goal
@@ -78,4 +80,5 @@ Begining with the ETL process extracting diabeties dataset and cleaning the data
 The aim of the machine learning model is to find the readmittance rate, which makes it a classification problem.
 Since the number of Features in this dataset will be more than 35, we will implement Deep Learning Model.
 Comparatively we will also train an SVM and Random Forests model and discuss the results. The Random Forest classifier will allow us the determine the best features for data selection, which we can use to streamline our Deep Learning Classifier and SVM Classifier.
+main
 
