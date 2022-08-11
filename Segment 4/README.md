@@ -146,6 +146,13 @@ Attempt 2 - 3 Layers, Activation - TANH, epoch - 100, Accuracy - 62.3%
 
 Again, changing the model to binary classification improves the results.
 
+
+### Logistic Regression
+
+![image](https://user-images.githubusercontent.com/100053788/184053565-b05f5882-3b19-4867-9a74-aa15a8b15d44.png)
+
+We were able to obtain a better accuracy however the precision for >30 and <30 was relatively lower which is why the model was rejected and not taken into consideration. 
+
 ## Conclusion
 
 After multiple attempts to improve the machine learning model results we reached the following conclusions:
