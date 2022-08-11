@@ -94,35 +94,49 @@ The following visualisations were obtained using the top ranking features.
 
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/100812308/183966853-8e05fe83-bcfc-42fb-8ed4-2e506099c68b.png">
 
+- Age group with the highes number of diabetes patients is 70-80. It also contains the highest readmittance rate - 27%.
+- Caucasians is the highest represented race.
+- The gender split is 53% to 47% in favor of female patients
+
 <img width="758" alt="image" src="https://user-images.githubusercontent.com/100812308/183966921-893f742a-b0e5-4d18-ab35-3657d0174edd.png">
+
+Most administered drug is Insulin followed by Metformin and Glipizide. An average of 1 dose per patient. This does not necessarily mean that every patient received insulin. But most patients received more than one dose throughout their treatment driving the number close to 1.
 
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/100812308/183966894-0e5464d1-f404-4d74-829f-6b14b864565d.png">
 
+As per diagnosis the reason for Readmittance is Respirator Diseases (30% of readmitted patients) and Immune disorders. This means that the patients contracted this illness during their initial treatment.
+
 <img width="449" alt="image" src="https://user-images.githubusercontent.com/100812308/183967454-cd0a2ac9-882d-4e05-b639-6b2ed3fc69b1.png">
+
+Comparison of the top ranked features with Readmittance for each category. There is no stark difference between these values which is the classifcation model does not perform to our expectation.
 
 ## Machine Learning Models
 
 ### Random Forest Classifier 
 
-Attempt 1
+Attempt 1 - Total Patients - 71518, Accuracy Achieved - 60.98%
 
 <img width="341" alt="image" src="https://user-images.githubusercontent.com/100812308/183970804-3b87e3ae-c6c9-4a3e-bda0-61dfbd22ab3e.png">
 
-Attempt 2
+Attempt 2 - Total Patients - 100244, Accuracy Achieved - 62.8%
 
 <img width="387" alt="image" src="https://user-images.githubusercontent.com/100812308/183970899-83989502-9794-4cf6-b9ae-4fb2c86a59ae.png">
+
+For Attempt 2, the problem was changed from multi-class classification to binary classification. Accuracy acheived increases slgihtly.
+Ther precision score for the 2nd model is comparable for both categories, which is more aligned with our aim.
 
 
 ### ANN Classifier
 
-Attempt 1
+Attempt 1 - 2 Layer, Activation - RELU, epoch - 100, Accuracy - 54.52%
 
 <img width="357" alt="image" src="https://user-images.githubusercontent.com/100812308/183971152-d7f71215-8f20-4a3f-80c2-864f08561bb0.png">
 
-Attempt 2
+Attempt 2 - 3 Layers, Activation - TANH, epoch - 100, Accuracy - 62.3%
 
 <img width="381" alt="image" src="https://user-images.githubusercontent.com/100812308/183971237-a6296d62-37e6-4804-b141-e28ef7559035.png">
 
+Again, changing the model to binary classification improves the results.
 
 ## Conclusion
 
@@ -134,7 +148,7 @@ After multiple attempts to improve the machine learning model results we reached
 
 - The classification model can improve if we provide more data points. One way to achieve this is to use updated and live data.
 
-- Obesity is known to have a correlation with diabetes. One major shortcoming of this dataset was that majority of the weight data was missing.
+- Obesity is known to have a correlation with diabetes. One major shortcoming of this dataset was that majority of the weight data was missing. We ran the model with weight data, total patients were 3605 and were able to obtain an accuracy of around 58%. More weight data would mean greater accuracy.
 
 
 
